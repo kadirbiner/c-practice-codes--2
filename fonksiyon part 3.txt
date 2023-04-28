@@ -1,0 +1,46 @@
+
+#include <iostream>
+using namespace std;
+
+//C++ ile Fonksiyon kullanarak girilen iki yazılı notunun ortalamasını hesaplayan örneği oluşturunuz.
+
+
+
+
+
+int notOrtalamasi(int not1, int not2)
+{
+
+	 
+	return (not1+not2)/2;
+	 
+}
+
+
+
+
+
+
+
+int main()
+{
+	setlocale(LC_ALL, "turkish");
+
+	int n1, n2;
+
+	cout << "Lütfen 1.notu  giriniz:";
+	cin >> n1;
+	cout << "Lütfen 2.notu  giriniz:";
+	cin >> n2;
+	cout << endl;
+	cout << "Not ortalaması:"<< notOrtalamasi(n1, n2);
+	cout << endl << endl;
+
+	
+
+
+
+
+
+	return 0;
+}

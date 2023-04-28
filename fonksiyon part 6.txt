@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+
+//C++ ile Fonksiyon kullanarak girilen sayının tek sayı veya çift sayı olduğunu bulan kodları fonksiyon kullanarak oluşturunuz.
+
+
+bool tekmiCiftmi(int say)
+{
+	if (say % 2 == 0)
+	{
+		return true;
+	}
+	else
+	{
+	  return false ;
+	}
+
+}
+
+
+
+
+int main()
+{
+	setlocale(LC_ALL, "turkish");
+
+
+
+	int sayi;
+
+	cout << "lütfen bir sayı giriniz:";
+	cin >> sayi;
+	
+
+	if (tekmiCiftmi(sayi))
+	{
+		cout << "ÇİFTTİR.";
+	}
+	else
+	{
+		cout << "TEKTİR.";
+	}
+	cout << endl << endl << endl;
+	return 0;
+}

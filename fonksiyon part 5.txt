@@ -1,0 +1,54 @@
+
+#include <iostream>
+using namespace std;
+//C++ Fonksiyon kullanarak dairenin alanı ve çevresini hesaplayan örneği oluşturunuz.
+
+
+
+
+int daireAlani(int pi, int yaricap)
+{
+
+	int islem;
+	islem = pi * yaricap*yaricap;
+	cout << "Dikdörtgenein Alanı:" << islem;
+	cout << endl << endl;
+	return islem;
+}
+
+
+
+int daireCevresi(int pi, int yaricap)
+{
+	int islem;
+	islem = 2 *pi*yaricap;
+	cout << "Dikdörtgenin Çevresi:" << islem;
+	cout << endl << endl;
+	return islem;
+
+}
+
+
+
+
+int main()
+{
+	setlocale(LC_ALL, "turkish");
+
+	int yaricap, pi;
+
+	cout << "Lütfen yarıçapı  giriniz:";
+	cin >> yaricap;
+	cout << "Lütfen pi  giriniz:";
+	cin >> pi;
+	cout << endl;
+
+	daireAlani(yaricap, pi);
+	daireCevresi(yaricap, pi);
+
+
+
+
+	return 0;
+}
+

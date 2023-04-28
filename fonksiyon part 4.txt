@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+//C++ ile Fonksiyon kullanarak Vize ve Final notu girilen öğrencinin ortalamasını hesaplayınız.
+
+
+
+int notOrtalamasi(int vize, int final)
+{
+
+	 
+	return (vize+final)/2;
+	 
+}
+
+
+
+
+
+
+
+int main()
+{
+	setlocale(LC_ALL, "turkish");
+
+	int viz, fin;
+
+	cout << "Lütfen vize notunu  giriniz:";
+	cin >> viz;
+	cout << "Lütfen final notunu  giriniz:";
+	cin >> fin;
+	cout << endl;
+	cout << "Not ortalaması:"<< notOrtalamasi(viz, fin);
+	cout << endl << endl;
+
+	
+
+
+
+
+
+	return 0;
+}

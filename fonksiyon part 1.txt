@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+	//C++ ile fonksiyon kullanarak (toplama) örneğini  oluşturunuz.
+
+int dortislem(int say1, int say2)
+{
+
+	int islem;
+	islem = say1 + say2;
+	cout << "sonuç:" << islem;
+	return islem;
+}
+
+
+
+
+
+
+int main()
+{
+	setlocale(LC_ALL, "turkish");
+	
+	int say1, say2;
+
+	cout << "Lütfen sayı-1 ve sayı-2 yi giriniz:"<<endl;
+	cin >> say1 >> say2;
+
+	dortislem(say1, say2);
+
+	
+	
+
+
+	return 0;
+}
